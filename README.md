@@ -1,4 +1,4 @@
-# North Tees and Hartlepool NHS Foundation Trust
+# North Tees and Hartlepool NHS Foundation Trust.
 ## Clinical & Digital Systems Learning Hub & ESR Portlet Replacement
 
 This repository provides a modern replacement for the legacy ESR (Electronic Staff Record) training links portlet.
