@@ -12,7 +12,6 @@
     selectedDept: 'all',
     selectedStatus: 'all',
     expandedCards: new Set(),
-    completedCourses: new Set(JSON.parse(localStorage.getItem('nth_completed_courses') || '[]')),
     allCategories: window.PORTAL_DATA ? window.PORTAL_DATA.categories : []
   };
 
@@ -52,22 +51,15 @@
     btnToggleAll: document.getElementById('btnToggleAll'),
     resultsCountText: document.getElementById('resultsCountText'),
     cardsContainer: document.getElementById('cardsContainer'),
-    completedHeaderBadge: document.getElementById('completedHeaderBadge'),
     toast: document.getElementById('toast'),
     guideModal: document.getElementById('guideModal'),
     btnOpenGuide: document.getElementById('btnOpenGuide'),
-    btnCloseGuide: document.getElementById('btnCloseGuide'),
-    btnChecklistModal: document.getElementById('btnChecklistModal'),
-    checklistModal: document.getElementById('checklistModal'),
-    btnCloseChecklist: document.getElementById('btnCloseChecklist'),
-    checklistContent: document.getElementById('checklistContent'),
-    btnClearChecklist: document.getElementById('btnClearChecklist')
+    btnCloseGuide: document.getElementById('btnCloseGuide')
   };
 
   // --- Initialization ---
   function init() {
     renderDepartmentPills();
-    updateCompletedBadge();
     bindEvents();
 
     // Check URL Hash for deep linking (e.g., #collapseOne)
@@ -168,41 +160,17 @@
       });
     }
 
-    // Checklist Modal
-    if (elements.btnChecklistModal) {
-      elements.btnChecklistModal.addEventListener('click', openChecklistModal);
-    }
-    if (elements.btnCloseChecklist) {
-      elements.btnCloseChecklist.addEventListener('click', () => {
-        elements.checklistModal.classList.remove('active');
-      });
-    }
-    if (elements.btnClearChecklist) {
-      elements.btnClearChecklist.addEventListener('click', () => {
-        if (confirm('Are you sure you want to clear your saved completed modules?')) {
-          state.completedCourses.clear();
-          localStorage.removeItem('nth_completed_courses');
-          updateCompletedBadge();
-          renderCards();
-          openChecklistModal();
-          showToast('Checklist cleared');
-        }
+    // Close modal on clicking overlay background
+    if (elements.guideModal) {
+      elements.guideModal.addEventListener('click', (e) => {
+        if (e.target === elements.guideModal) elements.guideModal.classList.remove('active');
       });
     }
 
-    // Close modals on clicking overlay background
-    [elements.guideModal, elements.checklistModal].forEach(modal => {
-      if (!modal) return;
-      modal.addEventListener('click', (e) => {
-        if (e.target === modal) modal.classList.remove('active');
-      });
-    });
-
-    // Keyboard ESC to close modals
+    // Keyboard ESC to close modal
     window.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
+      if (e.key === 'Escape' && elements.guideModal) {
         elements.guideModal.classList.remove('active');
-        elements.checklistModal.classList.remove('active');
       }
     });
   }
@@ -335,8 +303,7 @@
 
         items.forEach(item => {
           const courseItem = document.createElement('div');
-          const isCompleted = state.completedCourses.has(item.title);
-          courseItem.className = `course-item ${isCompleted ? 'completed' : ''}`;
+          courseItem.className = 'course-item';
 
           // Course Code Extraction (e.g. 345)
           const codeMatch = item.title.match(/^(345\s+)/);
@@ -358,7 +325,6 @@
 
           courseItem.innerHTML = `
             <div class="course-left">
-              <input type="checkbox" class="course-checkbox" title="Mark course as completed" ${isCompleted ? 'checked' : ''}>
               <div class="course-info">
                 <div class="course-title">${cleanTitle}</div>
                 <div class="course-tags">
@@ -380,21 +346,6 @@
               </button>
             </div>
           `;
-
-          // Checkbox event
-          const checkbox = courseItem.querySelector('.course-checkbox');
-          checkbox.addEventListener('change', () => {
-            if (checkbox.checked) {
-              state.completedCourses.add(item.title);
-              courseItem.classList.add('completed');
-              showToast(`Marked "${cleanTitle}" as completed`);
-            } else {
-              state.completedCourses.delete(item.title);
-              courseItem.classList.remove('completed');
-            }
-            localStorage.setItem('nth_completed_courses', JSON.stringify(Array.from(state.completedCourses)));
-            updateCompletedBadge();
-          });
 
           // Copy link event
           const copyBtn = courseItem.querySelector('.btn-copy-link');
@@ -419,53 +370,6 @@
       card.appendChild(body);
       elements.cardsContainer.appendChild(card);
     });
-  }
-
-  // --- Completed Badge Counter ---
-  function updateCompletedBadge() {
-    const count = state.completedCourses.size;
-    elements.completedHeaderBadge.textContent = count;
-  }
-
-  // --- Checklist Modal Details ---
-  function openChecklistModal() {
-    const completedArr = Array.from(state.completedCourses);
-    elements.checklistContent.innerHTML = '';
-
-    if (completedArr.length === 0) {
-      elements.checklistContent.innerHTML = `
-        <div style="text-align: center; padding: 2rem 1rem; color: #64748B;">
-          <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">No completed courses yet</p>
-          <p style="font-size: 0.85rem;">Tick the checkboxes next to courses as you complete them to track your induction progress.</p>
-        </div>
-      `;
-    } else {
-      let html = `
-        <div style="background: #F0FDF4; border: 1px solid #BBF7D0; padding: 1rem; border-radius: 8px; margin-bottom: 1.25rem;">
-          <div style="font-size: 0.95rem; font-weight: 700; color: #166534;">
-            🎉 You have marked ${completedArr.length} training modules as completed!
-          </div>
-          <div style="font-size: 0.82rem; color: #15803D; margin-top: 0.25rem;">
-            Remember to take a screenshot of each completion page before submitting your ServiceNow access request.
-          </div>
-        </div>
-        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem;">
-      `;
-
-      completedArr.forEach((cTitle, idx) => {
-        html += `
-          <li style="display: flex; align-items: center; justify-content: space-between; padding: 0.65rem 0.85rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 6px; font-size: 0.88rem;">
-            <span><strong style="color: #005EB8;">${idx + 1}.</strong> ${cTitle}</span>
-            <span style="color: #10B981; font-weight: 700; font-size: 0.75rem;">COMPLETED</span>
-          </li>
-        `;
-      });
-
-      html += `</ul>`;
-      elements.checklistContent.innerHTML = html;
-    }
-
-    elements.checklistModal.classList.add('active');
   }
 
   // --- Toast Notification ---

@@ -21,10 +21,6 @@
         </div>
       </div>
       <nav class="header-actions" aria-label="Quick Actions">
-        <button id="btnChecklistModal" class="btn-header" title="View your completed modules">
-          <span>My Completed</span>
-          <span id="completedHeaderBadge" class="badge-count">0</span>
-        </button>
         <button onclick="window.print()" class="btn-header" title="Print this training catalog">
           <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
           <span>Print Hub</span>
@@ -213,24 +209,7 @@
     </div>
   </div>
 
-  <!-- Completed Checklist Modal -->
-  <div id="checklistModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="checklistModalTitle">
-    <div class="modal-card">
-      <div class="modal-header">
-        <h3 id="checklistModalTitle" class="modal-title">
-          <span>📋</span> My Completed Training Modules
-        </h3>
-        <button id="btnCloseChecklist" class="modal-close-btn" aria-label="Close modal">&times;</button>
-      </div>
-      <div class="modal-body">
-        <div id="checklistContent"></div>
-      </div>
-      <div style="padding: 1rem 1.5rem; background: #F8FAFC; border-top: 1px solid var(--border-light); display: flex; justify-content: space-between; align-items: center;">
-        <button id="btnClearChecklist" style="font-size: 0.82rem; color: var(--nhs-emergency-red); font-weight: 600;">Clear All Completed</button>
-        <button onclick="window.print()" class="btn-enrol" style="background: var(--nhs-blue);">Print Completed Summary</button>
-      </div>
-    </div>
-  </div>
+
 
   <!-- Toast Notification -->
   <div id="toast" class="toast-notification" role="status" aria-live="polite"></div>

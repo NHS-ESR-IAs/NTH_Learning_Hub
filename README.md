@@ -20,7 +20,7 @@ The legacy ESR portlet contained Bootstrap HTML/JavaScript accordion code. Follo
    - **Access Request Workflow Panel** highlighting mandatory ServiceNow procedures and 1-click links for:
      - **TrakCare Access Requests**
      - **ICE / PACS / MediViewer Access Requests**
-   - **Interactive Induction Checklist**: Staff can mark courses as completed, track progress in their browser, and print summaries for their clinical educators or supervisors.
+   - **Direct Role Sharing & Deep Linking**: Staff and managers can copy and share direct links to any specific role or department.
    - **Official NHS Design System styling**: Accessible, high contrast, branded NHS Blue (`#005EB8`) and Dark Blue (`#003087`).
 
 2. **New Signposting Portlet for ESR (`esr-portlet.html`)**:
@@ -38,7 +38,7 @@ The legacy ESR portlet contained Bootstrap HTML/JavaScript accordion code. Follo
 |---|---|
 | [`index.html`](file:///Volumes/Crucial%20X9%20Pro%20For%20Mac/GitHub/NTH_Learning_Hub/index.html) | Main web application homepage |
 | [`styles.css`](file:///Volumes/Crucial%20X9%20Pro%20For%20Mac/GitHub/NTH_Learning_Hub/styles.css) | NHS design system, responsive styles, print stylesheet |
-| [`app.js`](file:///Volumes/Crucial%20X9%20Pro%20For%20Mac/GitHub/NTH_Learning_Hub/app.js) | Interactive search, filtering, accordions, and progress checklist |
+| [`app.js`](file:///Volumes/Crucial%20X9%20Pro%20For%20Mac/GitHub/NTH_Learning_Hub/app.js) | Interactive search, filtering, accordions, and deep-linking |
 | [`courses-data.js`](file:///Volumes/Crucial%20X9%20Pro%20For%20Mac/GitHub/NTH_Learning_Hub/courses-data.js) | Structured JSON dataset with all 21 categories, 367 modules, URLs, and metadata |
 | [`esr-portlet.html`](file:///Volumes/Crucial%20X9%20Pro%20For%20Mac/GitHub/NTH_Learning_Hub/esr-portlet.html) | Pure HTML/CSS signposting portlet ready to paste into ESR |
 | [`Portal Info.docx`](file:///Volumes/Crucial%20X9%20Pro%20For%20Mac/GitHub/NTH_Learning_Hub/Portal%20Info.docx) | Original legacy portlet export document |
@@ -66,7 +66,6 @@ Because the site is built on pure static web technologies with zero server-side 
 1. Log into **Oracle ESR** with an administrator profile with portal configuration rights.
 2. Navigate to **Portal Administration** &rarr; **Manage Portlets** (or configure the dashboard where the portlet should appear, such as *Employee Self Service* or *Clinical Dashboard*).
 3. Create or edit a **User Defined Portlet** (Type: *HTML / Text*).
-4. Open [`esr-portlet.html`](file:///Volumes/Crucial%20X9%20Pro%20For%20Mac/GitHub/NTH_Learning_Hub/esr-portlet.html) in a text editor.
-5. In the HTML code, update the `<a href="index.html">` link on the main CTA button to point to your live website URL (e.g., `https://learning-hub.nth.nhs.uk/` or your GitHub Pages URL).
-6. Copy the HTML content and paste it into the ESR portlet source editor.
-7. Click **Save** and **Publish**.
+4. Open [`esr-portlet.html`](file:///Volumes/Crucial%20X9%20Pro%20For%20Mac/GitHub/NTH_Learning_Hub/esr-portlet.html) (the links are pre-configured for `https://nhs-esr-ias.github.io/NTH_Learning_Hub/`).
+5. Copy the HTML content and paste it into the ESR portlet source editor.
+6. Click **Save** and **Publish**.
