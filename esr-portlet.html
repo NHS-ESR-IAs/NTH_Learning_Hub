@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ESR Signposting Portlet</title>
+</head>
+<body style="margin: 0; padding: 16px; background-color: #f4f6f8;">
+
+<!-- 
+================================================================================
+  NORTH TEES AND HARTLEPOOL NHS FOUNDATION TRUST (Trust Code 345)
+  ESR USER-DEFINED WEB PORTLET: CLINICAL & DIGITAL SYSTEMS TRAINING SIGNPOSTING
+================================================================================
+  COMPATIBILITY NOTICE:
+  - 100% Pure HTML & Inline CSS.
+  - ZERO JavaScript (<script> tags and onclick handlers have been removed)
+    to comply with ESR security restrictions.
+  - Safe for all Oracle ESR dashboards and portlet container widths.
+
+  ADMIN INSTRUCTIONS:
+  1. Open ESR Portal Administration -> Manage Portlets.
+  2. Select your Target Dashboard (e.g., Clinical Dashboard, Employee Self Service).
+  3. Create or Edit a "User Defined Portlet" (HTML/Text).
+  4. Copy and paste the <div> container below into the portlet source box.
+  5. Replace the placeholder URL "index.html" with your live deployed website URL 
+     (e.g., https://your-trust-intranet-url.nhs.uk/learning-hub/ or GitHub Pages).
+================================================================================
+-->
+
+<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 100%; margin: 0 auto; background: #ffffff; border: 2px solid #005EB8; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 48, 135, 0.08); color: #212b32;">
+
+  <!-- Portlet Header Banner -->
+  <div style="background: linear-gradient(135deg, #003087 0%, #005EB8 100%); color: #ffffff; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <span style="background: #ffffff; color: #005EB8; font-weight: 800; font-size: 18px; padding: 3px 8px; border-radius: 4px; letter-spacing: -0.5px; display: inline-block;">NHS</span>
+      <div>
+        <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; opacity: 0.9; font-weight: 600;">North Tees and Hartlepool NHS FT</div>
+        <div style="font-size: 16px; font-weight: 700; line-height: 1.2;">Clinical &amp; Digital Training Hub</div>
+      </div>
+    </div>
+    <span style="background: #00A499; color: #ffffff; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Portal Upgraded</span>
+  </div>
+
+  <!-- Portlet Main Body -->
+  <div style="padding: 20px;">
+    
+    <div style="background: #F0F4F8; border-left: 4px solid #005EB8; padding: 12px 16px; border-radius: 4px; margin-bottom: 18px;">
+      <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #0F172A;">
+        <strong>Notice for Clinical &amp; Ward Staff:</strong> 
+        The legacy training links portlet has been upgraded to our new interactive, searchable <strong>Clinical &amp; Digital Systems Learning Hub</strong> covering 21 job roles and 360+ training modules.
+      </p>
+    </div>
+
+    <!-- Main Call to Action Button -->
+    <div style="text-align: center; margin: 22px 0;">
+      <!-- REPLACE URL BELOW WITH YOUR HOSTED WEBSITE ADDRESS -->
+      <a href="index.html" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #005EB8; color: #ffffff; font-size: 16px; font-weight: 700; text-decoration: none; padding: 14px 28px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 94, 184, 0.3); border: 2px solid #005EB8;">
+        Launch Training Portal &amp; Browse All Roles &rarr;
+      </a>
+      <div style="font-size: 12px; color: #64748B; margin-top: 8px;">
+        Opens the interactive directory in a new tab (TrakCare, SystmOne, ICE, PACS, Theatres, etc.)
+      </div>
+    </div>
+
+    <!-- Crucial Reminder Box: ServiceNow Requests -->
+    <div style="background: #FFF9E6; border: 1px solid #FDE68A; border-radius: 8px; padding: 14px 16px; margin-bottom: 18px;">
+      <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+        <span style="background: #DA291C; color: #ffffff; font-size: 11px; font-weight: 800; padding: 2px 6px; border-radius: 3px; text-transform: uppercase;">MANDATORY STEP</span>
+        <strong style="color: #92400E; font-size: 13px;">System Access Request Procedure:</strong>
+      </div>
+      <p style="margin: 0 0 10px 0; font-size: 13px; color: #78350F; line-height: 1.45;">
+        At the end of each prerequisite course on ESR, you must <strong>take a screenshot of your completion page</strong> and attach it to your ServiceNow access request form.
+      </p>
+      
+      <!-- Direct ServiceNow Links (No JS needed) -->
+      <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px;">
+        <a href="https://nthnhs.service-now.com/sp?id=sc_cat_item&amp;table=sc_cat_item&amp;sys_id=86a4689b976fbd90a441f6771153af2f" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #003087; color: #ffffff; font-size: 12px; font-weight: 700; text-decoration: none; padding: 7px 12px; border-radius: 6px;">
+          &bull; Request TrakCare Access (ServiceNow)
+        </a>
+        <a href="https://nthnhs.service-now.com/sp?id=sc_cat_item&amp;table=sc_cat_item&amp;sys_id=6776e0ce9708c650a441f6771153af5c" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #007F3B; color: #ffffff; font-size: 12px; font-weight: 700; text-decoration: none; padding: 7px 12px; border-radius: 6px;">
+          &bull; Request ICE / PACS / MediViewer Access
+        </a>
+      </div>
+    </div>
+
+    <!-- Pure HTML Dropdown: Quick Role Directory (Requires 0 JavaScript!) -->
+    <div style="border-top: 1px solid #E2E8F0; padding-top: 14px;">
+      <details style="cursor: pointer; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 10px 14px;">
+        <summary style="font-size: 13px; font-weight: 700; color: #005EB8; user-select: none;">
+          &#9654; Click here to preview quick links by Department
+        </summary>
+        <div style="margin-top: 10px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; font-size: 12px;">
+          <a href="index.html#collapseOne" target="_blank" style="color: #005EB8; text-decoration: none; padding: 4px 0;">&bull; Doctor Induction</a>
+          <a href="index.html#collapseThree" target="_blank" style="color: #005EB8; text-decoration: none; padding: 4px 0;">&bull; A&amp;E Staff (Admin, Nurse, Dr)</a>
+          <a href="index.html#collapseFive" target="_blank" style="color: #005EB8; text-decoration: none; padding: 4px 0;">&bull; EAU Staff</a>
+          <a href="index.html#collapseSeven" target="_blank" style="color: #005EB8; text-decoration: none; padding: 4px 0;">&bull; General Inpatients Staff</a>
+          <a href="index.html#collapseEight" target="_blank" style="color: #005EB8; text-decoration: none; padding: 4px 0;">&bull; Maternity Midwife &amp; Prescriber</a>
+          <a href="index.html#collapseEleven" target="_blank" style="color: #005EB8; text-decoration: none; padding: 4px 0;">&bull; Outpatients Staff</a>
+          <a href="index.html#collapseThirteen" target="_blank" style="color: #005EB8; text-decoration: none; padding: 4px 0;">&bull; Theatre Staff (Surgeons, Scrub, Recovery)</a>
+          <a href="index.html#collapseFourteen" target="_blank" style="color: #005EB8; text-decoration: none; padding: 4px 0;">&bull; HCA Staff (Inpatients &amp; Outpatients)</a>
+          <a href="index.html#collapseNineteen" target="_blank" style="color: #005EB8; text-decoration: none; padding: 4px 0;">&bull; SystmOne Access &amp; Training</a>
+          <a href="index.html#collapseTwenty" target="_blank" style="color: #005EB8; text-decoration: none; padding: 4px 0;">&bull; SharePoint 2019 &amp; Admin</a>
+        </div>
+      </details>
+    </div>
+
+  </div>
+
+  <!-- Portlet Footer -->
+  <div style="background: #F1F5F9; border-top: 1px solid #E2E8F0; padding: 8px 16px; font-size: 11px; color: #64748B; display: flex; justify-content: space-between; align-items: center;">
+    <span>Trust Code: 345 &bull; NTH Digital Education</span>
+    <span>No-JS ESR Portlet v2.0</span>
+  </div>
+
+</div>
+</body>
+</html>
