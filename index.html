@@ -21,6 +21,10 @@
         </div>
       </div>
       <nav class="header-actions" aria-label="Quick Actions">
+        <a href="#supportSection" class="btn-header" title="ESR &amp; Training Helpdesk Directory">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          <span>Support &amp; Escalations</span>
+        </a>
         <button onclick="window.print()" class="btn-header" title="Print this training catalog">
           <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
           <span>Print Hub</span>
@@ -36,11 +40,11 @@
       <div class="hero-content">
         <div class="hero-tag">
           <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-          Clinical Training Directory
+          Clinical Training Directory &bull; TrakCare+ Active
         </div>
         <h1 id="heroHeading" class="hero-heading">Clinical &amp; Systems Training Portal</h1>
         <p class="hero-lead">
-          Find mandatory and recommended digital systems training for your specific job role at North Tees and Hartlepool. Enrol in 1 click on ESR and submit your system access requests via ServiceNow.
+          Find mandatory and recommended digital systems training for your specific job role at North Tees and Hartlepool. Access latest <strong>TrakCare+</strong>, SystmOne, and ICE modules with 1-click ESR enrolment and log ServiceNow requests.
         </p>
 
         <!-- Trust Statistics -->
@@ -48,14 +52,14 @@
           <div class="stat-card">
             <div class="stat-icon">🎓</div>
             <div class="stat-data">
-              <span class="stat-number">21</span>
-              <span class="stat-label">Job Roles Covered</span>
+              <span class="stat-number">22</span>
+              <span class="stat-label">Roles &amp; Programmes</span>
             </div>
           </div>
           <div class="stat-card">
             <div class="stat-icon">📚</div>
             <div class="stat-data">
-              <span class="stat-number">367</span>
+              <span class="stat-number">420+</span>
               <span class="stat-label">Direct Modules</span>
             </div>
           </div>
@@ -84,10 +88,16 @@
           <span class="workflow-badge">Crucial Step</span>
           <h2 id="workflowHeading" class="workflow-title">Mandatory System Access Request Workflow</h2>
         </div>
-        <button id="btnOpenGuide" class="btn-guide-modal" type="button">
-          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-          <span>Screenshot &amp; Submission Guide</span>
-        </button>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+          <a href="#supportSection" class="btn-guide-modal" style="background: #ffffff; color: var(--nhs-dark-blue); border-color: var(--border-medium); text-decoration: none;">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <span>ESR &amp; Training Helpdesk</span>
+          </a>
+          <button id="btnOpenGuide" class="btn-guide-modal" type="button">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span>Screenshot &amp; Submission Guide</span>
+          </button>
+        </div>
       </div>
 
       <div class="workflow-steps">
@@ -121,11 +131,134 @@
       </div>
     </section>
 
+    <!-- ESR & Training Support Directory Section -->
+    <section id="supportSection" class="support-section" aria-labelledby="supportHeading">
+      <div class="support-card-main">
+        <div class="support-header">
+          <div class="support-header-badge">University Hospitals Tees &bull; Escalation Directory</div>
+          <h2 id="supportHeading" class="support-title">ESR, E-Learning &amp; Training Support Directory</h2>
+          <p class="support-subtitle">
+            Need guidance with ESR manager/supervisor self-service, course registers, completed eLearning not updating on ESR, or workforce reports? Contact the appropriate Trust support teams below.
+          </p>
+        </div>
+
+        <div class="support-grid">
+          <!-- 1. My ESR / Supervisor Access -->
+          <div class="support-box">
+            <div class="support-box-top">
+              <span class="support-icon">🔑</span>
+              <h3 class="support-box-title">My ESR &amp; Supervisor Access</h3>
+            </div>
+            <p class="support-box-desc">Supervisor and Manager Self-Service guidance, navigation guides, and profile access.</p>
+            <div class="support-actions">
+              <a href="http://sharept2010/Departments/TF012/SitePages/ESR%20Manager%20Self-Service.aspx" target="_blank" rel="noopener noreferrer" class="support-btn-link" title="Open SharePoint Guide">
+                <span>📘 ESR Manager SharePoint Guide</span> &rarr;
+              </a>
+              <div class="support-contact-row">
+                <span class="support-trust-tag north">North Tees</span>
+                <a href="mailto:nth-tr.esrselfservice@nhs.net" class="support-email-link">nth-tr.esrselfservice@nhs.net</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. E-Learning & Competency Queries -->
+          <div class="support-box">
+            <div class="support-box-top">
+              <span class="support-icon">💻</span>
+              <h3 class="support-box-title">E-Learning &amp; Competency Queries</h3>
+            </div>
+            <p class="support-box-desc">For courses completed but not updated in ESR, TNA queries, or competency enquiries.</p>
+            <div class="support-actions">
+              <div class="support-contact-row">
+                <span class="support-trust-tag north">North Tees</span>
+                <a href="mailto:nth-tr.elearning@nhs.net" class="support-email-link">nth-tr.elearning@nhs.net</a>
+              </div>
+              <div class="support-contact-row">
+                <span class="support-trust-tag south">South Tees</span>
+                <a href="mailto:stees.mandatorytraining@nhs.net" class="support-email-link">stees.mandatorytraining@nhs.net</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Course Setup & Attendance Registers -->
+          <div class="support-box">
+            <div class="support-box-top">
+              <span class="support-icon">📋</span>
+              <h3 class="support-box-title">Course Setup in ESR &amp; Registers</h3>
+            </div>
+            <p class="support-box-desc">Requesting new training courses to be configured in ESR, or submitting session registers.</p>
+            <div class="support-actions">
+              <div class="support-contact-row">
+                <span class="support-trust-tag north">North Tees</span>
+                <a href="mailto:nth-tr.training.records@nhs.net" class="support-email-link">nth-tr.training.records@nhs.net</a>
+              </div>
+              <div class="support-contact-row">
+                <span class="support-trust-tag south">South Tees</span>
+                <a href="mailto:stees.mandatorytraining@nhs.net" class="support-email-link">stees.mandatorytraining@nhs.net</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Payroll Issues / Queries -->
+          <div class="support-box">
+            <div class="support-box-top">
+              <span class="support-icon">💷</span>
+              <h3 class="support-box-title">Payroll &amp; Workforce Queries</h3>
+            </div>
+            <p class="support-box-desc">Workforce pay queries, increments, banding updates, and ESR payroll records.</p>
+            <div class="support-actions">
+              <div class="support-contact-row">
+                <span class="support-trust-tag north">North Tees</span>
+                <a href="mailto:nth-tr.payroll@nhs.net" class="support-email-link">nth-tr.payroll@nhs.net</a>
+              </div>
+              <div class="support-contact-row">
+                <span class="support-trust-tag south">South Tees</span>
+                <a href="mailto:stees.workforce@nhs.net" class="support-email-link">stees.workforce@nhs.net</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Reports for Training / Compliance -->
+          <div class="support-box">
+            <div class="support-box-top">
+              <span class="support-icon">📊</span>
+              <h3 class="support-box-title">Training &amp; Compliance Reports</h3>
+            </div>
+            <p class="support-box-desc">Directorate and ward-level compliance reporting, tracking stats, and workforce reports.</p>
+            <div class="support-actions">
+              <div class="support-contact-row">
+                <span class="support-trust-tag north">North Tees</span>
+                <a href="mailto:nth-tr.management.information@nhs.net" class="support-email-link">nth-tr.management.information@nhs.net</a>
+              </div>
+              <div class="support-contact-row">
+                <span class="support-trust-tag south">South Tees</span>
+                <a href="mailto:stees.workforce@nhs.net" class="support-email-link">stees.workforce@nhs.net</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Mandatory Training Partner -->
+          <div class="support-box highlight-partner">
+            <div class="support-box-top">
+              <span class="support-icon">👩‍💼</span>
+              <h3 class="support-box-title">Mandatory Training Partner</h3>
+            </div>
+            <p class="support-box-desc"><strong>Gina Marley</strong> &bull; Mandatory Training &amp; Learning Partner (University Hospitals Tees)</p>
+            <div class="support-partner-details">
+              <div>📞 Tel: <strong>01642 624509</strong> (ext. <strong>24509</strong>)</div>
+              <div>📧 Email: <a href="mailto:gina.marley@nhs.net">gina.marley@nhs.net</a></div>
+              <div class="partner-days">🗓 Working days: <strong>Tuesday, Wednesday &amp; Thursday</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Search & Filter Controls -->
     <section class="controls-section" aria-label="Search and filter training roles">
       <div class="search-box-wrap">
         <span class="search-icon">🔍</span>
-        <input type="text" id="searchInput" class="search-input" placeholder="Search by job role, course title, code (e.g. 345), or system (TrakCare, SystmOne, PACS, EDM2)..." autocomplete="off">
+        <input type="text" id="searchInput" class="search-input" placeholder="Search by job role, course title, code (e.g. 345), or system (TrakCare+, SystmOne, PACS, EDM2)..." autocomplete="off">
         <button id="clearSearchBtn" class="clear-search-btn" title="Clear search" style="display: none;">✕</button>
       </div>
 

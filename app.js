@@ -25,7 +25,7 @@
     { id: 'Specialist Clinical', label: 'Specialist Clinical' },
     { id: 'Outpatients & Clinics', label: 'Outpatients' },
     { id: 'Administration & Records', label: 'Admin & Records' },
-    { id: 'Digital & IT Systems', label: 'SystmOne & IT Systems' }
+    { id: 'Digital & IT Systems', label: 'TrakCare+ & Digital Systems' }
   ];
 
   // SVG Icons
@@ -66,6 +66,9 @@
     const hash = window.location.hash.replace('#', '');
     if (hash) {
       state.expandedCards.add(hash);
+    } else {
+      // Default expand the featured TrakCare+ Circulation program
+      state.expandedCards.add('collapseTrakCarePlus');
     }
 
     renderCards();

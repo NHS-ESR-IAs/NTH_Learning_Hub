@@ -1,6 +1,7 @@
 /**
  * NTH Learning Hub - Clinical & Digital Training Data
- * Extracted and compiled from Trust Training Catalog
+ * Extracted and compiled from Trust Training Catalog & TrakCare+ Circulation Program
+ * Updated with latest TrakCare+ and Escalations Directory from Trust Learning Partner
  */
 
 window.PORTAL_DATA = {
@@ -11,7 +12,459 @@ window.PORTAL_DATA = {
     "trakcare": "https://nthnhs.service-now.com/sp?id=sc_cat_item&table=sc_cat_item&sys_id=86a4689b976fbd90a441f6771153af2f",
     "ice_pacs_mediviewer": "https://nthnhs.service-now.com/sp?id=sc_cat_item&table=sc_cat_item&sys_id=6776e0ce9708c650a441f6771153af5c"
   },
+  "partnerContact": {
+    "name": "Gina Marley",
+    "role": "Mandatory Training and Learning Partner",
+    "org": "University Hospitals Tees",
+    "trust": "North Tees and Hartlepool NHS Foundation Trust",
+    "phone": "01642 624509 or ext. 24509",
+    "email": "gina.marley@nhs.net",
+    "website": "http://www.nth.nhs.uk/",
+    "workingDays": "Tuesday, Wednesday and Thursday"
+  },
+  "supportDirectory": [
+    {
+      "issue": "My ESR / Supervisor / Manager Access",
+      "guideUrl": "http://sharept2010/Departments/TF012/SitePages/ESR%20Manager%20Self-Service.aspx",
+      "guideTitle": "ESR Manager Self-Service SharePoint Guide",
+      "description": "Step-by-step guides for supervisor and manager self-service access are available on the Trust SharePoint page.",
+      "contacts": [
+        {
+          "trust": "North Tees",
+          "team": "ESR Self Service Team",
+          "email": "nth-tr.esrselfservice@nhs.net"
+        }
+      ]
+    },
+    {
+      "issue": "E-Learning, Competency, TNA & Training Queries",
+      "description": "For general training queries, competency updates, training needs analysis (TNA), or courses completed but not updated in ESR.",
+      "contacts": [
+        {
+          "trust": "North Tees",
+          "team": "North Tees eLearning Team",
+          "email": "nth-tr.elearning@nhs.net"
+        },
+        {
+          "trust": "South Tees",
+          "team": "South Tees Mandatory Training Team",
+          "email": "stees.mandatorytraining@nhs.net"
+        }
+      ]
+    },
+    {
+      "issue": "Training Courses Setup in ESR & Registers to Input",
+      "description": "For setting up new courses/sessions in ESR or submitting session attendance registers to update staff records.",
+      "contacts": [
+        {
+          "trust": "North Tees",
+          "team": "North Tees Training Records",
+          "email": "nth-tr.training.records@nhs.net"
+        },
+        {
+          "trust": "South Tees",
+          "team": "South Tees Mandatory Training Team",
+          "email": "stees.mandatorytraining@nhs.net"
+        }
+      ]
+    },
+    {
+      "issue": "Payroll Issues & Queries",
+      "description": "For workforce payroll queries and pay-related training records.",
+      "contacts": [
+        {
+          "trust": "North Tees",
+          "team": "North Tees Payroll Team",
+          "email": "nth-tr.payroll@nhs.net"
+        },
+        {
+          "trust": "South Tees",
+          "team": "South Tees Workforce Team",
+          "email": "stees.workforce@nhs.net"
+        }
+      ]
+    },
+    {
+      "issue": "Reports for Training or Compliance",
+      "description": "For ward/department training reports, compliance data, and statutory reporting.",
+      "contacts": [
+        {
+          "trust": "North Tees",
+          "team": "North Tees Management Information",
+          "email": "nth-tr.management.information@nhs.net"
+        },
+        {
+          "trust": "South Tees",
+          "team": "South Tees Workforce Team",
+          "email": "stees.workforce@nhs.net"
+        }
+      ]
+    }
+  ],
   "categories": [
+    {
+      "id": "collapseTrakCarePlus",
+      "title": "TrakCare+ & Clinical Systems (Circulation v0.1)",
+      "department": "Digital & IT Systems",
+      "icon": "laptop-medical",
+      "item_count": 59,
+      "items": [
+        {
+          "subgroup": "Emergency Assessment Unit (EAU) - Doctor",
+          "title": "345 TrakCare+ Training for Doctors in Emergency Assessment Unit (EAU)",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=-d0.BMv2MktY6QFDrQ0DqGg3k3nGH1jcEp5ue.ODh-WvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Emergency Assessment Unit (EAU) - Doctor",
+          "title": "345 TrakCare+ Training Doctor Discharge Summary Emergency Assessment (EAU)",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=UGMub-O4mEhANUv-yrRLu.mCJ1EqRcvsLYCngF.aTA2vOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Emergency Assessment Unit (EAU) - Doctor",
+          "title": "345 TrakCare+ Training ePMA – Prescribing",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=yopB8JCx11RcTCaNHSQc0br7iS5mhHHkFNtfBmU6MZ6vOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Emergency Assessment Unit (EAU) - Nurse",
+          "title": "345 TrakCare+ Training for Nurses in Emergency Assessment Unit (EAU)",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=kpU2sOjImBSfv6AV13AXN9n3nQ2Iy1fjAW2O09YypvivOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Emergency Assessment Unit (EAU) - Nurse",
+          "title": "345 TrakCare+ Training e-Observations Video",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=WD.24qx0oNzdzydc0iQ8r8tX0mgQV6v2nKqim-cPuiOvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Emergency Assessment Unit (EAU) - Nurse",
+          "title": "345 TrakCare+ Training ePMA – Administering",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=vqVQFHwtlRMjg.JnQaz0S8cNHoDHO.nNNrHrgdix9P2vOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Emergency Assessment Unit (EAU) - HCA",
+          "title": "345 TrakCare+ Training for HCA's in Emergency Assessment Unit (EAU)",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=vqPM68nHdZ9wF3WQrhEwWlVoesjyNfjXLmC.opfPypOvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Emergency Assessment Unit (EAU) - HCA",
+          "title": "345 TrakCare+ Training e-Observations Video",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=WD.24qx0oNzdzydc0iQ8r8tX0mgQV6v2nKqim-cPuiOvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Emergency Assessment Unit (EAU) - Admin",
+          "title": "345 TrakCare+ Training for Admin Staff in Emergency Assessment Unit (EAU)",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=VA7jnhB2yC.A4ZGyp63WRI5NnZhwvTcqlYqALI3fDKqvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Emergency Assessment Unit (EAU) - Admin",
+          "title": "345 TrakCare+ Training for Booking Outpatients",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=6tQTOYfE3zOzBp8igA3f1XRmUp-3nyor22kF0FYkw.CvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Emergency Department (ED) - Doctor",
+          "title": "345 TrakCare+ Training ePMA – Prescribing",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=yopB8JCx11RcTCaNHSQc0br7iS5mhHHkFNtfBmU6MZ6vOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Emergency Department (ED) - Doctor",
+          "title": "345TrakCare+ Training for Doctors in Emergency Department (ED)",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=mCvKWs9qytbySu3vy0FrMaXVh99WXrcLwPHPH4WfJsyvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Emergency Department (ED) - Doctor",
+          "title": "345TrakCare+ Training - Doctors (Discharge Summary)",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=dh.XIbzRDbMgKBW10aW5n2S9tI7xz8OXgrtVbKoNU-Pjqmc8GjONz5gXLyN7DUgpolGCdLYoiv5z9-CiuyyplscZXUiFSbGwKJ2TS0fMk1c",
+          "status": "available"
+        },
+        {
+          "subgroup": "Emergency Department (ED) - Nurse",
+          "title": "345TrakCare+ Training for Nurses in Emergency Department (ED)",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=a-zQVTdFia8RQiiU9D7rhuL5NSJvxe7TMQM0ULpm8g2vOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Emergency Department (ED) - Nurse",
+          "title": "345 TrakCare+ Training e-Observations Video",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=WD.24qx0oNzdzydc0iQ8r8tX0mgQV6v2nKqim-cPuiOvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Emergency Department (ED) - Nurse",
+          "title": "345 TrakCare+ Training ePMA – Administering",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=vqVQFHwtlRMjg.JnQaz0S8cNHoDHO.nNNrHrgdix9P2vOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Emergency Department (ED) - HCA",
+          "title": "345 TrakCare+ Training e-Observations Video",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=WD.24qx0oNzdzydc0iQ8r8tX0mgQV6v2nKqim-cPuiOvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Emergency Department (ED) - HCA",
+          "title": "345 TrakCare+ Training for HCA's in Emergency Department (ED)",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=VvEgPIoJVgGSjAcmQj5Rs55TskYvD1nAV-P.bjDms5avOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Emergency Department (ED) - Admin",
+          "title": "345 TrakCare+ Training for Emergency Department (ED) Admin",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=lmn8f6vFeEvG2G1sT4ygygx7d867iN5hcl01yAfWYcqvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "In-Patients - Doctor",
+          "title": "345TrakCare+ Training - Doctors In Patients",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=uq2Tm5KopXKWvUWJjW2jsogWCVS9jc1sXelAtyc8GA6vOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "In-Patients - Doctor",
+          "title": "345TrakCare+ Training - Doctors (Discharge Summary)",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=dh.XIbzRDbMgKBW10aW5n2S9tI7xz8OXgrtVbKoNU-Pjqmc8GjONz5gXLyN7DUgpolGCdLYoiv5z9-CiuyyplscZXUiFSbGwKJ2TS0fMk1c",
+          "status": "available"
+        },
+        {
+          "subgroup": "In-Patients - Doctor",
+          "title": "345 TrakCare+ Training ePMA – Prescribing",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=yopB8JCx11RcTCaNHSQc0br7iS5mhHHkFNtfBmU6MZ6vOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "In-Patients - Nurse",
+          "title": "345 TrakCare+ Training in-Patient Nurse",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=d4fKYxRkLBxcegH.x8iIJXfWkRZR3S0JYjh2qxC3x6qvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "In-Patients - Nurse",
+          "title": "345 TrakCare+ Training e-Observations Video",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=WD.24qx0oNzdzydc0iQ8r8tX0mgQV6v2nKqim-cPuiOvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "In-Patients - Nurse",
+          "title": "345 TrakCare+ Training ePMA – Administering",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=vqVQFHwtlRMjg.JnQaz0S8cNHoDHO.nNNrHrgdix9P2vOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "In-Patients - HCA",
+          "title": "345 TrakCare+ Training e-Observations Video",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=WD.24qx0oNzdzydc0iQ8r8tX0mgQV6v2nKqim-cPuiOvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "In-Patients - HCA",
+          "title": "345 TrakCare+ Training - In Patients for HCA",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=KUSDo6wj95wPr3cKR2QZJVwY.IGEzO-JRzKDHwrkQ6CvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "In-Patients - Admin",
+          "title": "345 TrakCare+ Training Basic Navigation",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=Gb8MZgSVKJy71Ewr7003V0ayEdkLxSS1b5tlr1LO0gKvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "In-Patients - Admin",
+          "title": "345 TrakCare+ Training for In-Patient Bookings – Should be TrakCare+ Training Inpatient – Admin but cannot find this course",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=qZVc5QZQXij3bGVcBWqYkidxquRpOfhdSa7EghqBH7mvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Theatres - Doctor",
+          "title": "345 TrakCare+ Training for Theatre Doctors",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=TmbzbuF3uRJOo9eQuBy8lXHg8ZNoAPL1pmHQaiqJm6GvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Theatres - Doctor",
+          "title": "345 TrakCare+ Training ePMA – Prescribing",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=yopB8JCx11RcTCaNHSQc0br7iS5mhHHkFNtfBmU6MZ6vOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Theatres - Nurse",
+          "title": "345 TrakCare+ Training for Nurses in Theatres",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=A3GpYg3z0SndYIpcsGkbCYuZIxVNeNlbQyaAb7ezRVSvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Theatres - Nurse",
+          "title": "345 TrakCare+ Training e-Observations Video",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=WD.24qx0oNzdzydc0iQ8r8tX0mgQV6v2nKqim-cPuiOvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Theatres - Nurse",
+          "title": "345 TrakCare+ Training ePMA – Administering",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=vqVQFHwtlRMjg.JnQaz0S8cNHoDHO.nNNrHrgdix9P2vOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Theatres - HCA",
+          "title": "345 TrakCare+ Training e-Observations Video",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=WD.24qx0oNzdzydc0iQ8r8tX0mgQV6v2nKqim-cPuiOvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Theatres - HCA",
+          "title": "345 TrakCare+ Training - In Patients for HCA",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=KUSDo6wj95wPr3cKR2QZJVwY.IGEzO-JRzKDHwrkQ6CvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Theatres - Admin",
+          "title": "345 TrakCare+ Training for Theatres - Admin staff",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=0i25IkVQlISR8KmUFiECu8RM0yEsHg726WyqN7WRVrivOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Theatres - Medical Records/Booking Office",
+          "title": "345 TrakCare+ Training Basic Navigation",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=Gb8MZgSVKJy71Ewr7003V0ayEdkLxSS1b5tlr1LO0gKvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Theatres - Medical Records/Booking Office",
+          "title": "345 TrakCare+ Training for Booking Outpatients",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=6tQTOYfE3zOzBp8igA3f1XRmUp-3nyor22kF0FYkw.CvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Theatres - Medical Records/Booking Office",
+          "title": "345 TrakCare+ Training for Medical Records",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=5sHzsWUPW1RhGFrWNs907i5h8iU23Uxyt3MW4NRglkCvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Out-Patients Department - Admin",
+          "title": "345 TrakCare+ Training for Outpatients Admin",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=Jkg2xUJzcoBHIwfdsKlSoqgPAZP4bCwYs-MFCRUTc4CvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Out-Patients Department - Clinical",
+          "title": "345 TrakCare+ Training for Outpatients – Clinical",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=GmnEBhPiMIDTtG8I.bCnZuFvYe3OnaIGcSBxqkl6cA2vOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Out-Patients Department - Clinical",
+          "title": "345 TrakCare+ Training ePMA – Administering",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=vqVQFHwtlRMjg.JnQaz0S8cNHoDHO.nNNrHrgdix9P2vOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Out-Patients Department - Clinical",
+          "title": "345 TrakCare+ Training ePMA – Prescribing",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=yopB8JCx11RcTCaNHSQc0br7iS5mhHHkFNtfBmU6MZ6vOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Out-Patients Department - Clinical",
+          "title": "345 TrakCare+ Training e-Observations Video",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=WD.24qx0oNzdzydc0iQ8r8tX0mgQV6v2nKqim-cPuiOvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Out-Patients Department - Bookings",
+          "title": "345 TrakCare+ Training for Booking Outpatients",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=6tQTOYfE3zOzBp8igA3f1XRmUp-3nyor22kF0FYkw.CvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Out-Patients Department - Bookings",
+          "title": "345 TrakCare+ Training for In-Patient Bookings",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=qZVc5QZQXij3bGVcBWqYkidxquRpOfhdSa7EghqBH7mvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Out-Patients Department - Patient Process Facilitators",
+          "title": "345 TrakCare+ Training Basic Navigation",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=Gb8MZgSVKJy71Ewr7003V0ayEdkLxSS1b5tlr1LO0gKvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Out-Patients Department - Patient Process Facilitators",
+          "title": "345 TrakCare+ Training e-Observations Video",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=WD.24qx0oNzdzydc0iQ8r8tX0mgQV6v2nKqim-cPuiOvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Out-Patients Department - Patient Process Facilitators",
+          "title": "345 TrakCare+ Training - Patient Process Facilitator",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=poOqetkLQNBNmaqBSrL-BYD3VpVmuBQxyRbPyyxTTzOvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Additional Systems - ICE",
+          "title": "ICE Requesting and Reporting",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=3mG3Y8l5Ee96yjTgDekv6Dj3rNd-X-14fgLPQ.L7Qt.vOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Additional Systems - SystmOne",
+          "title": "345 SystmOne - An Overview of the Patient Record",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=AkDckeXyk92gajQZQCvQD9f3hFa5E9Z0t1CaAwVLaY6vOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Additional Systems - SystmOne",
+          "title": "345 SystmOne Basics full -for Community Ward Matrons",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=xGPOw0OEXSEzor8YL5-KUdlIJjZB4GTZ7f--fZvMCFWvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Additional Systems - SystmOne",
+          "title": "345 SystmOne - Care Plans, Schedules & Visits",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=wa4NV3fLE26zdBh0UXr2ahmNY74Cb22eoA6Ay3Izoz6vOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Additional Systems - SystmOne",
+          "title": "345 SystmOne - Caseloads and Referral Allocation",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=sSH61OeXYFFUQKvRm4VstP0BT8jDePX188J0do1OQB2vOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Additional Systems - SystmOne",
+          "title": "345 SystmOne - Getting Started",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=9e0aL1LIlt7cS9KzuZs-LMC0B6wB8KPEV2TpUcRbwAyvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Additional Systems - SystmOne",
+          "title": "345 SystmOne - Performing a Consultation",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=nR2Ek8AopSxciuRsEemPDNMLgm3zSnAYPoZNqRoF-GevOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Additional Systems - SystmOne",
+          "title": "345 SystmOne – Safeguarding",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=RS1URKmdsp2zyIwu2u1JdEHEn0UlPizNTcz0-TIpWIuvOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        },
+        {
+          "subgroup": "Additional Systems - SystmOne",
+          "title": "345 SystmOne - The Appointment Ledger",
+          "url": "https://my.esr.nhs.uk:443/OA_HTML/RF.jsp?function_id=18931&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=-TMkwku-yXseXR2PJkijYbRMnMtU0TV7YUL8MBvrFievOD2wyzXT4SBU7EPGgNFhFGT5UuAaa.aGcKrg74urKWauzCR9mV2ZVrjg8q3Jk7Y",
+          "status": "available"
+        }
+      ]
+    },
     {
       "id": "collapseOne",
       "title": "Doctor Induction Training",

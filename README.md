@@ -14,9 +14,11 @@ The legacy ESR portlet contained Bootstrap HTML/JavaScript accordion code. Follo
 
 1. **Standalone Clinical & Digital Systems Learning Hub (Web App)**:
    - A modern, interactive, fully responsive website built with vanilla HTML5, CSS3, and JavaScript.
-   - Comprehensive directory covering **21 Job Roles** and **367 Training Modules** with direct ESR enrollment links.
-   - **Real-time instant search** across roles, courses, codes (e.g. `345`), and systems (*TrakCare, SystmOne, PACS, EDM2, ICE*).
-   - **Department filtering pills** (*Emergency & Acute, Doctors & Students, Wards, Theatres, Specialist Clinical, Digital Systems*).
+   - Comprehensive directory covering **22 Job Roles & Programmes** and **420+ Training Modules** with direct ESR enrollment links.
+   - **TrakCare+ Circulation Programme (v0.1)**: Dedicated featured directory of newly circulated TrakCare+ clinical systems training for EAU, Emergency Department, Inpatients, Theatres, Outpatients, ICE, and SystmOne.
+   - **Real-time instant search** across roles, courses, codes (e.g. `345`), and systems (*TrakCare+, SystmOne, PACS, EDM2, ICE*).
+   - **Department filtering pills** (*Emergency & Acute, Doctors & Students, Wards, Theatres, Specialist Clinical, TrakCare+ & Digital Systems*).
+   - **Integrated ESR & Training Support Directory**: Escalation routes for supervisor access, attendance registers, e-learning competencies, payroll, and compliance reporting across North Tees and South Tees.
    - **Access Request Workflow Panel** highlighting mandatory ServiceNow procedures and 1-click links for:
      - **TrakCare Access Requests**
      - **ICE / PACS / MediViewer Access Requests**
@@ -28,7 +30,7 @@ The legacy ESR portlet contained Bootstrap HTML/JavaScript accordion code. Follo
    - Completely safe and compatible with ESR's sanitized web portlets.
    - Prominently directs staff to the new website.
    - Provides direct 1-click ServiceNow access request buttons directly inside ESR.
-   - Includes a pure HTML `<details><summary>` dropdown for quick department navigation without JavaScript.
+   - Includes pure HTML `<details><summary>` dropdowns for quick department navigation and ESR/Training Support contacts without JavaScript.
 
 ---
 
@@ -36,11 +38,13 @@ The legacy ESR portlet contained Bootstrap HTML/JavaScript accordion code. Follo
 
 | File | Description |
 |---|---|
-| [`index.html`](file:///Volumes/Crucial%20X9%20Pro%20For%20Mac/GitHub/NTH_Learning_Hub/index.html) | Main web application homepage |
-| [`styles.css`](file:///Volumes/Crucial%20X9%20Pro%20For%20Mac/GitHub/NTH_Learning_Hub/styles.css) | NHS design system, responsive styles, print stylesheet |
+| [`index.html`](file:///Volumes/Crucial%20X9%20Pro%20For%20Mac/GitHub/NTH_Learning_Hub/index.html) | Main web application homepage with TrakCare+ catalogue and Support Directory |
+| [`styles.css`](file:///Volumes/Crucial%20X9%20Pro%20For%20Mac/GitHub/NTH_Learning_Hub/styles.css) | NHS design system, responsive styles, print stylesheet, support directory styling |
 | [`app.js`](file:///Volumes/Crucial%20X9%20Pro%20For%20Mac/GitHub/NTH_Learning_Hub/app.js) | Interactive search, filtering, accordions, and deep-linking |
-| [`courses-data.js`](file:///Volumes/Crucial%20X9%20Pro%20For%20Mac/GitHub/NTH_Learning_Hub/courses-data.js) | Structured JSON dataset with all 21 categories, 367 modules, URLs, and metadata |
-| [`esr-portlet.html`](file:///Volumes/Crucial%20X9%20Pro%20For%20Mac/GitHub/NTH_Learning_Hub/esr-portlet.html) | Pure HTML/CSS signposting portlet ready to paste into ESR |
+| [`courses-data.js`](file:///Volumes/Crucial%20X9%20Pro%20For%20Mac/GitHub/NTH_Learning_Hub/courses-data.js) | Structured JSON dataset with all 22 categories, 420+ modules, URLs, and Support Directory |
+| [`esr-portlet.html`](file:///Volumes/Crucial%20X9%20Pro%20For%20Mac/GitHub/NTH_Learning_Hub/esr-portlet.html) | Pure HTML/CSS signposting portlet with quick role links and helpdesk contacts |
+| [`Inputs/Links to Clinical Systems Training - For Circulation v0.1.docx`](file:///Volumes/Crucial%20X9%20Pro%20For%20Mac/GitHub/NTH_Learning_Hub/Inputs/Links%20to%20Clinical%20Systems%20Training%20-%20For%20Circulation%20v0.1.docx) | Extracted circulation document from Gina Marley |
+| [`Inputs/Hyperlinks to training programmes.eml`](file:///Volumes/Crucial%20X9%20Pro%20For%20Mac/GitHub/NTH_Learning_Hub/Inputs/Hyperlinks%20to%20training%20programmes.eml) | Source email containing circulation attachment and escalation contacts |
 | [`Portal Info.docx`](file:///Volumes/Crucial%20X9%20Pro%20For%20Mac/GitHub/NTH_Learning_Hub/Portal%20Info.docx) | Original legacy portlet export document |
 
 ---
